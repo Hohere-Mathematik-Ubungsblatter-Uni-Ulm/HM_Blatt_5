@@ -1,0 +1,17 @@
+\section{Aufgabe 5}
+    \subsection{i)}
+        $$1+cos(\varphi)+cos(2\varphi)+...+cos(n\varphi)=\sum_{k=0}^ncos(k\varphi)$$
+        $$=Re(\sum_{k=0}^ne^{ik\varphi})=Re(\sum_{k=0}^n(e^{i\varphi})^k)$$
+        $$=Re(\frac{(e^{i\varphi})^{n+1}-1}{e^{i\varphi}-1})=Re(\frac{e^{i(n+1)\varphi}-1}{e^{i\varphi}-1})$$
+        $$=Re(\frac{exp(i\frac{n+1}{2}\varphi)}{exp(i\frac{\varphi}{2})}\frac{exp(i\frac{n+1}{2}\varphi)-exp(-i\frac{n+1}{2}\varphi)}{exp(i\frac{\varphi}{2})-exp(-i\frac{\varphi}{2}))}$$
+        Da $e^{ix}=cosx+isinx$
+        $$=Re(e^{i\frac{n\varphi}{2}}\frac{sin(\frac{n+1}{2}\varphi)}{sin(\frac{\varphi}{2})})=cos(\frac{n\varphi}{2})\frac{sin(\frac{n+1}{2}\varphi)}{sin(\frac{\varphi}{2})}$$
+
+    \subsection{ii)}
+        Analog dazu gilt:
+        $$sin(\varphi)+sin(2\varphi)+...+sin(n\varphi)=\sum_{k=0}^nsin(k\varphi)$$
+        $$=Im(\sum_{k=0}^ne^{ik\varphi})=Im(\sum_{k=0}^n(e^{i\varphi})^k)$$
+        $$=Im(\frac{(e^{i\varphi})^{n+1}-1}{e^{i\varphi}-1})=Im(\frac{e^{i(n+1)\varphi}-1}{e^{i\varphi}-1})$$
+        $$=Im(\frac{exp(i\frac{n+1}{2}\varphi)}{exp(i\frac{\varphi}{2})}\frac{exp(i\frac{n+1}{2}\varphi)-exp(-i\frac{n+1}{2}\varphi)}{exp(i\frac{\varphi}{2})-exp(-i\frac{\varphi}{2}))}$$
+        Da $e^{ix}=cosx+isinx$
+        $$=Im(e^{i\frac{n\varphi}{2}}\frac{sin(\frac{n+1}{2}\varphi)}{sin(\frac{\varphi}{2})})=sin(\frac{n\varphi}{2})\frac{sin(\frac{n+1}{2}\varphi)}{sin(\frac{\varphi}{2})}$$

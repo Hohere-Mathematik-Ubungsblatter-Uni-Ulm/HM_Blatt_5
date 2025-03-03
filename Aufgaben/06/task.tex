@@ -1,0 +1,223 @@
+\section{Aufgabe 6}
+    \subsection{a)}
+        $$3A-2B^T+E_3$$
+        $$= 3 
+        \begin{pmatrix}
+            1 & 2 & 0\\
+            4 & 3 & 0\\
+            0 & 0 & 1
+        \end{pmatrix}
+        -2
+        \begin{pmatrix}
+            2 & 7 & -2 \\
+            4 & 0 & 1 \\
+            1 & 4 & 0
+        \end{pmatrix}^T
+        + \begin{pmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1
+        \end{pmatrix}
+        $$
+        $$=
+        \begin{pmatrix}
+            3 & 6 & 0\\
+            12 & 9 & 0\\
+            0 & 0 & 3
+        \end{pmatrix}
+        -
+        \begin{pmatrix}
+            4 & 14 & -4 \\
+            8 & 0 & 2 \\
+            2 & 8 & 0
+        \end{pmatrix}^T
+        + \begin{pmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1
+        \end{pmatrix}
+        $$
+        $$=
+        \begin{pmatrix}
+            3 & 6 & 0\\
+            12 & 9 & 0\\
+            0 & 0 & 3
+        \end{pmatrix}
+        -
+        \begin{pmatrix}
+            4 & 8 & 2 \\
+            14 & 0 & 8 \\
+            -4 & 2 & 0
+        \end{pmatrix}
+        + \begin{pmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1
+        \end{pmatrix}
+        $$
+        $$=
+        \begin{pmatrix}
+            0 & -2 & -2 \\
+            -2 & 10 & -8 \\
+            4 & -2 & 4
+        \end{pmatrix}$$
+
+    \subsection{b)}
+        \subsubsection{i)}
+            $$(A+B)F$$
+            $$=(\begin{pmatrix}
+                1 & 2 & 0\\
+                4 & 3 & 0\\
+                0 & 0 & 1
+            \end{pmatrix}
+            +
+            \begin{pmatrix}
+                2 & 7 & -2 \\
+                4 & 0 & 1 \\
+                1 & 4 & 0
+            \end{pmatrix}
+            )\cdot
+            \begin{pmatrix}
+                4\\
+                3\\
+                1
+            \end{pmatrix}
+            $$
+            $$=\begin{pmatrix}
+                3 & 9 & -2\\
+                8 & 3 & 1\\
+                1 & 4 & 1
+            \end{pmatrix}
+            \cdot
+            \begin{pmatrix}
+                4\\
+                3\\
+                1
+            \end{pmatrix}$$
+            $$=
+            \begin{pmatrix}
+                37\\
+                42\\
+                17
+            \end{pmatrix}$$
+
+        \subsubsection{ii)}
+            $$AF+BF$$
+            $$= \begin{pmatrix}
+                1 & 2 & 0\\
+                4 & 3 & 0\\
+                0 & 0 & 1
+            \end{pmatrix}
+            \begin{pmatrix}
+                4\\
+                3\\
+                1
+            \end{pmatrix}
+            +
+            \begin{pmatrix}
+                2 & 7 & -2 \\
+                4 & 0 & 1 \\
+                1 & 4 & 0
+            \end{pmatrix}
+            \begin{pmatrix}
+                4\\
+                3\\
+                1
+            \end{pmatrix}
+            $$
+            $$=
+            \begin{pmatrix}
+                10\\
+                25\\
+                1
+            \end{pmatrix}
+            +
+            \begin{pmatrix}
+                27\\
+                17\\
+                16
+            \end{pmatrix}
+            $$
+            $$=
+            \begin{pmatrix}
+                37\\
+                42\\
+                17
+            \end{pmatrix}$$
+
+    \subsection{c)}
+        \subsubsection{i)}
+            $$GF$$
+            $$=\begin{pmatrix}
+                2 & 2 & 1
+            \end{pmatrix}
+            \begin{pmatrix}
+                4 \\
+                3 \\
+                1
+            \end{pmatrix}=15$$
+            
+        \subsubsection{ii)}
+            $$FG$$
+            $$=\begin{pmatrix}
+                4 \\
+                3 \\
+                1
+            \end{pmatrix}
+            \begin{pmatrix}
+                2 & 2 & 1
+            \end{pmatrix}
+            $$
+            $$=\begin{pmatrix}
+                8 & 8 & 4\\
+                6 & 6 & 3 \\
+                2 & 2 & 1
+            \end{pmatrix}$$
+
+    \subsection{d)}
+        \subsubsection{i)}
+            $$CD$$
+            $$=\begin{pmatrix}
+                1 & 0 & 0 & -1\\
+                -2 & 4 & 3 & 0
+            \end{pmatrix}
+            \begin{pmatrix}
+                1 & 1\\
+                1 & 1\\
+                0 & 2\\
+                1 & 2
+            \end{pmatrix}$$
+            $$=\begin{pmatrix}
+                0 & -1 \\
+                2 & 8
+            \end{pmatrix}$$
+
+        \subsubsection{ii)}            
+            $$D^TC^T$$
+            $$=
+            \begin{pmatrix}
+                1 & 1\\
+                1 & 1\\
+                0 & 2\\
+                1 & 2
+            \end{pmatrix}^T
+            \begin{pmatrix}
+                1 & 0 & 0 & -1\\
+                -2 & 4 & 3 & 0
+            \end{pmatrix}^T$$
+            $$=
+            \begin{pmatrix}
+                1 & 1 & 0 & 1 \\
+                1 & 1 & 2 & 2
+            \end{pmatrix}
+            \begin{pmatrix}
+                1 & -2 \\
+                0 & 4\\
+                0 & 3\\
+                -1 & 0
+            \end{pmatrix}$$
+            $$= \begin{pmatrix}
+                0 & 2\\
+                -1 & 8
+            \end{pmatrix}$$
+            

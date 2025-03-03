@@ -1,0 +1,23 @@
+\section{Aufgabe 1}
+    Sei  $\QQ\backslash \{-1\} = \mathbb{K}$. Wir schauen, ob $\mathbb{K}$ die Axiome einer abelscher Gruppe entspricht:
+    \begin{enumerate}[label=(\roman*)]
+        \item Abgeschlossenheit: Seien $a,b \in \mathbb{K}$:    \\
+            Da $a,b, \in \mathbb{K}$ gilt $a,b \in \QQ$. Daraus folgt: $a+b+ab \in \QQ$\\
+            Zudem muss: $a\circ b \neq -1 \Rightarrow ab+a+b+1\neq 0$. \\
+            Dies ist für $a,b \neq -1$ gegeben, da nur für $a=1,b=-1$ oder andersherum der Term $=0$ ist: \checkmark
+        \item Assoziativität: Seien $a,b,c \in \mathbb{K}$: 
+            $$a\circ (b \circ c) = a+(b\circ c)+a(b\circ c) = a+(b+c+bc)+a(b+c+bc)$$
+            $$=a+b+c+bc+ab+ac+abc=a+b+ab+c+ac+bc+abc$$
+            $$=(a+b+ab)+c+(a+b+ab)c=(a\circ b)+c+(a\circ b)c=(a\circ b)\circ c\ \checkmark$$ 
+        \item Kommutativität: Seien $a,b \in \mathbb{K}$: 
+            $$a\circ b = a+b+ab=b+a+ba=b\circ a\ \checkmark$$
+         \item Neutrales Element: Sei $a \in \mathbb{K}$. Wir suchen $e \in \mathbb{K}$ mit     $a\circ e = a \ \forall a \in \mathbb{K}$:
+            $$a+e+ae=a \Leftrightarrow e(1+a) = 0$$
+            Da $a\neq -1$ gilt $1+a \neq 0$ und somit $e=0\neq -1$ und somit $e \in \mathbb{K}$ \checkmark
+         \item Inverses Element: Sei $a \in \mathbb{K}$. Wir suchen $a^{-1} \in \mathbb{K}$ sodass $a \circ a^{-1} = e = 0$
+            $$a \circ a^{-1} = 0  \Leftrightarrow a+a^{-1}+aa^{-1}=0$$
+            $$\Leftrightarrow a^{-1}(1+a)=-a\Leftrightarrow a^{-1}= -\frac{a}{1+a}$$
+            $a^{-1} \in \mathbb{K}$ da $1+a \neq 0$. Aufgrund dessen existiert auch für jedes Element ein Inverses. \checkmark
+    \end{enumerate}
+    $\Rightarrow$ Somit ist $\mathbb{K} = \QQ\backslash \{-1\}$ eine abelsche Gruppe
+            
